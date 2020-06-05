@@ -8,17 +8,15 @@
       body {
         height: 100vh;
         width: 100vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
         background-color: black;
+        justify-content: center;
+        display: flex;
       }
 
       #game-board {
-        background-color: #ccc;
-        width: 100vmin;
         height: 100vmin;
+        width: 100vmin;
+        background-color: #ccc;
         display: grid;
         grid-template-columns: repeat(21, 1fr);
         grid-template-rows: repeat(21, 1fr);
@@ -30,7 +28,7 @@
       }
 
       .food {
-        background-color: chartreuse;
+        background-color: yellow;
         border: 0.25vmin solid black;
       }
     </style>
