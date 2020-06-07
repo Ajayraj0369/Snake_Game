@@ -1,6 +1,8 @@
 let inputDirection = { x: 0, y: 0 };
 
-window.addEventListener("keydown", (e) => {
+window.addEventListener("keydown", checkKey);
+
+function checkKey(e) {
   switch (e.key) {
     case "ArrowUp":
       inputDirection = { x: 0, y: -1 };
@@ -13,9 +15,10 @@ window.addEventListener("keydown", (e) => {
       break;
     case "ArrowRight":
       inputDirection = { x: 1, y: 0 };
+      break;
   }
-});
+}
 
-export function getInputDirection() {
+export function getDirection() {
   return inputDirection;
 }
